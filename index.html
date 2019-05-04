@@ -67,7 +67,11 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-          <form method="post" action="#">
+          <form
+            method="post"
+            action="submit"
+            onsubmit="javascript: submitContactForm()"
+          >
             <div class="fields">
               <div class="field half">
                 <label for="name">Name</label>
@@ -75,7 +79,7 @@
               </div>
               <div class="field half">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" required />
+                <input type="email" name="email" id="email" required />
               </div>
               <div class="field">
                 <label for="message">Message</label>
@@ -96,12 +100,18 @@
           </form>
           <ul class="icons">
             <li>
-              <a href="#" class="icon fa-linkedin"
+              <a
+                href="https://www.linkedin.com/in/daniel-klem-51154810a/"
+                class="icon fa-linkedin"
+                target="_blank"
                 ><span class="label">LinkedIn</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon fa-github"
+              <a
+                href="https://github.com/dklem90/"
+                class="icon fa-github"
+                target="_blank"
                 ><span class="label">GitHub</span></a
               >
             </li>
