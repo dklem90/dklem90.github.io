@@ -32,7 +32,6 @@
             <li><a href="#work">Work</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#elements">Elements</a></li>
           </ul>
         </nav>
       </header>
@@ -67,11 +66,10 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-          <form
-            method="post"
-            action="submit"
-            onsubmit="javascript: submitContactForm()"
-          >
+          <div class="message-success">
+            <h3>Your message has been sent!</h3>
+          </div>
+          <form id="contactForm">
             <div class="fields">
               <div class="field half">
                 <label for="name">Name</label>
@@ -131,10 +129,18 @@
     <div id="bg"></div>
 
     <!-- Scripts -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/db.js"></script>
   </body>
 </html>
